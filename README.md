@@ -26,7 +26,7 @@ Either specify all those who participated in the development, or just say nothin
 
 ### Installation
 -```sh
--$ git clone https://github.com/fanaticus/wodcms.git .
+-$ git clone https://github.com/fanaticus/wodcms.git.
 -$ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
 -$ chmod 755 -R Cache
 -```
