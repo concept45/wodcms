@@ -11,7 +11,8 @@ if(!$InstallationIsInProgress)
     if(isset($_SESSION['username']) && !Text::IsNull($_SESSION['username']))
     {
         $User = Account::Get($_SESSION['username']);
-        $Characters = Characters::GetCharacters($User['id']);
+        $UserGameID = Account::GetIdsAccounts($_SESSION['email']);
+        $Characters = Characters::GetCharacters($UserGameID['id']);
         $Smarty->assign('Characters', $Characters);
         $Smarty->assign('User', $User);
         $SelectedCharacterForComments = array();
