@@ -1,0 +1,124 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+
+*.iml
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+/Core/Configuration/Configuration.php
+/Core/Libraries/FreedomCore/*
+!/Core/Libraries/FreedomCore/*/
+!/Core/Libraries/FreedomCore/*.*
+/Cache/
+/Cache/Compile/
+/Cache/Compile/Templates/*.php
+/Cache/Compile/Templates/FreedomCore/*
+!/Cache/Compile/Templates/FreedomCore/index.html
+/Templates/FreedomCore/images/icons/large/*.*
+/Templates/FreedomCore/images/icons/medium/*.*
+/Templates/FreedomCore/images/icons/small/*.*
+/Templates/FreedomCore/images/icons/tiny/*.*
+!/Templates/FreedomCore/images/icons/tiny/trade_*.gif
+/Uploads/Core/Items/Cache/ModelViewer/*.jpg
+/Uploads/Core/NPC/Cache/*.jpg
+/Uploads/Core/NPC/ModelViewer/*.jpg
+/Templates/FreedomCore/images/dungeon-maps/*
+/Templates/FreedomCore/images/wiki/zone/*
+!/Templates/FreedomCore/images/wiki/zone/bgs
+/Cache/securitychecklist.php
+
+# Ignoring DBC, DB2, Interface Files
+# 3.3.5a Files
+/Tools/DBCExtractor/data/3.3.5a/DBC/*.dbc
+/Tools/DBCExtractor/data/3.3.5a/DBC/*.db2
+/Tools/DBCExtractor/data/3.3.5a/DBC/*.txt
+/Tools/DBCExtractor/data/3.3.5a/DBCLocalized/*.dbc
+/Tools/DBCExtractor/data/3.3.5a/DBCLocalized/*.db2
+/Tools/DBCExtractor/data/3.3.5a/DBCLocalized/*.txt
+/Tools/DBCExtractor/data/3.3.5a/interface/icons/*.*
+!/Tools/DBCExtractor/data/3.3.5a/interface/icons/*.php
+# 5.4.8 Files
+/Tools/DBCExtractor/data/5.4.8/DBC/*.dbc
+/Tools/DBCExtractor/data/5.4.8/DBC/*.db2
+/Tools/DBCExtractor/data/5.4.8/DBC/*.txt
+/Tools/DBCExtractor/data/5.4.8/DBCLocalized/*.dbc
+/Tools/DBCExtractor/data/5.4.8/DBCLocalized/*.db2
+/Tools/DBCExtractor/data/5.4.8/DBCLocalized/*.txt
+/Tools/DBCExtractor/data/5.4.8/interface/icons/*.*
+!/Tools/DBCExtractor/data/5.4.8/interface/icons/*.php
+# 6.x Files
+/Tools/DBCExtractor/data/6.x/DBC/*.dbc
+/Tools/DBCExtractor/data/6.x/DBC/*.db2
+/Tools/DBCExtractor/data/6.x/DBC/*.txt
+/Tools/DBCExtractor/data/6.x/DBCLocalized/*.dbc
+/Tools/DBCExtractor/data/6.x/DBCLocalized/*.db2
+/Tools/DBCExtractor/data/6.x/DBCLocalized/*.txt
+/Tools/DBCExtractor/data/6.x/interface/icons/*.*
+!/Tools/DBCExtractor/data/6.x/interface/icons/*.php

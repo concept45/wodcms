@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FreedomCore (aka Freedom.Net)
 
 [![Donate](http://freedomcore.ru/paypal-donate-button.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=apple%2ezhivolupov%40gmail%2ecom&lc=GB&item_name=FreedomCore&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
@@ -54,3 +55,6 @@ The thing is, since its hard to memorize all the changes made to the core, and s
 
 **What im trying to say is**
 ###Its not ready for 'production' yet!
+=======
+# wodcms
+>>>>>>> 100d46dd8d0d026ea6cfb315fa53622ff80cd483
