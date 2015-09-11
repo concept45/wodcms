@@ -2,13 +2,14 @@
 
 Class Account
 {
-    public static $DBConnection;
-    public static $AuthConnection;
-    public static $TM;
+	public static $DBConnection;
+	public static $AuthConnection;
+	public static $CharConnection;
+	public static $TM;
 	public static $UserID;
 	public static $Username;
 	public static $AuthStatus;
-    public static $VariablesArray;
+    	public static $VariablesArray;
 
     /**
      * This is a class constructor
@@ -18,6 +19,7 @@ Class Account
     {
         Account::$DBConnection = $VariablesArray[0]::$Connection;
         Account::$AuthConnection = $VariablesArray[0]::$AConnection;
+        Account::$CharConnection = $VariablesArray[0]::$CConnection;
         Account::$VariablesArray = $VariablesArray;
         Account::$TM = $VariablesArray[1];
     }
@@ -707,6 +709,43 @@ Class Account
         else
             return false;
     }
+    
+        public static function GetIdsAccounts($Email)
+    {
+        $Email = strtoupper($Email);
+        $Statement = Account::$AuthConnection->prepare('SELECT id FROM account WHERE email = :email');
+        $Statement->bindParam(':email', $Email);
+        $Statement->execute();
+        $Result = $Statement->fetch(PDO::FETCH_ASSOC);
+        return $Result;
+    }
+    
+    
+        public static function GetCharacters($UserID)
+    {
+        $Statement = Account::$CharConnection->prepare('
+            SELECT
+                cc.*,
+                g.name as guild_name
+            FROM
+                characters cc
+            LEFT JOIN guild_member gm ON
+                gm.guid = cc.guid
+            LEFT JOIN guild g ON
+                g.guildid = gm.guildid
+            WHERE
+                cc.account = :aid
+	    ');
+        $Statement->bindParam(':aid', $UserID);
+        $Statement->execute();
+        $Result = $Statement->fetch(PDO::FETCH_ASSOC);
+
+        if(!empty($Result)) {
+            return $Result['guid'];
+        }   else    {
+            return 0;
+        }
+    }
 
     /**
      * This method is used to get User API Key for Website APIs
@@ -846,9 +885,9 @@ Class Account
         {
             if($Result['pinned_character'] == null || Text::IsNull($Result['pinned_character']))
             {
-                $CharID = Characters::PickRandomChar($Result['id']);
-                if($CharID != false)
-                    Account::PinCharacter($Result['username'], $CharID);
+                $CharID = Account::GetIdsAccounts($Result['email']);
+                $UserChar = Account::GetCharacters($CharID['id']);
+                $UserChars = Account::PinCharacter($Result['email'], $UserChar);
             }
             $_SESSION['access_role'] = $Result['access_level'];
             return true; // Successfull Athorization
