@@ -1938,7 +1938,9 @@ switch($_REQUEST['category'])
                             case 'post':
                                 if(Session::ValidateCSRFToken($_REQUEST['csrftoken']))
                                 {
-                                    Text::Request();
+                                    $TopicData = Forums::GetTopicData($_REQUEST['lastcategory']);
+                                    $TopicID = Forums::AddTopicComments($_REQUEST['lastcategory'], $TopicData['category']['id'], $SelectedCharacterForComments['name'], $_REQUEST['postCommand_detail']);
+                                    header('Location: /forum/topic/'.$TopicID);
                                 }
                                 break;
 
