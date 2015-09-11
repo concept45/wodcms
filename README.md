@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# FreedomCore (aka Freedom.Net)
-
-[![Donate](http://freedomcore.ru/paypal-donate-button.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=apple%2ezhivolupov%40gmail%2ecom&lc=GB&item_name=FreedomCore&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+[![Donate](http://freedomcore.ru/paypal-donate-button.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fanaticus3@gmail.com&lc=GB&item_name=FreedomCore&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 FreedomCore is a replica of Battle.net website created by Blizzard.  
 My desire is full compliance between FreedomCore and Battle.net.  
@@ -27,11 +24,7 @@ Either specify all those who participated in the development, or just say nothin
  - TrinityCore 6.x (Not supported, there is no table called **item_template** - so cant really get items info)  
 
 ### Installation
-```sh
-$ git clone https://github.com/darki73/FreedomCore.git .
-$ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
-$ chmod 755 -R Cache
-```
+
 
 ###Importing Database
 - Create Database for Website (Name it as you want, but dont forget to change config)
@@ -44,10 +37,6 @@ $ chmod 755 -R Cache
 - Place Extracted MPQ Archive with all the icons inside **/Tools/DBCExtractor/data/_Patch_Version_/interface/icons** folder
 - Open in Browser **/Tools/DBCExtractor/** and select **Generate Icons** appropriate for your patch    
 
-**Short video on how to extract icons (based on WoD 6.2 Patch) ** 
-
-[![FreedomNet Icons Extractor](https://i.ytimg.com/vi/14o4nTLQ3aw/hqdefault.jpg)](http://www.youtube.com/watch?v=14o4nTLQ3aw)
-
 #Important Stuff
 Since this project lets say in **Alpha** stage, im not going to support database updates.   
 **What does it means?**  
@@ -57,4 +46,3 @@ The thing is, since its hard to memorize all the changes made to the core, and s
 ###Its not ready for 'production' yet!
 =======
 # wodcms
->>>>>>> 100d46dd8d0d026ea6cfb315fa53622ff80cd483
