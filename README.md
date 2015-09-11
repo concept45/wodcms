@@ -24,12 +24,12 @@ Either specify all those who participated in the development, or just say nothin
  - Skyfire 5.4.8 (Probably supported, if database structure is the same as TrinityCore)  
  - TrinityCore 6.x (Not supported, there is no table called **item_template** - so cant really get items info)  
 
-### Installation
--```sh
--$ git clone https://github.com/fanaticus/wodcms.git.
--$ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
--$ chmod 755 -R Cache
--```
+# Installation
+>sh
+- $ git clone https://github.com/fanaticus/wodcms.git.
+- $ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
+- $ chmod 755 -R Cache
+- ```
 
 ###Importing Database
 - Create Database for Website (Name it as you want, but dont forget to change config)
