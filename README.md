@@ -1,3 +1,4 @@
+# wodcms
 [![Donate](http://freedomcore.ru/paypal-donate-button.jpg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fanaticus3@gmail.com&lc=GB&item_name=FreedomCore&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
 FreedomCore is a replica of Battle.net website created by Blizzard.  
@@ -24,7 +25,11 @@ Either specify all those who participated in the development, or just say nothin
  - TrinityCore 6.x (Not supported, there is no table called **item_template** - so cant really get items info)  
 
 ### Installation
-
+-```sh
+-$ git clone https://github.com/fanaticus/wodcms.git .
+-$ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
+-$ chmod 755 -R Cache
+-```
 
 ###Importing Database
 - Create Database for Website (Name it as you want, but dont forget to change config)
@@ -45,4 +50,3 @@ The thing is, since its hard to memorize all the changes made to the core, and s
 **What im trying to say is**
 ###Its not ready for 'production' yet!
 =======
-# wodcms
