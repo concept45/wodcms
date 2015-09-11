@@ -29,7 +29,6 @@ Either specify all those who participated in the development, or just say nothin
 - $ git clone https://github.com/fanaticus/wodcms.git.
 - $ mv Core/Configuration/Configuration.php.in mv Core/Configuration/Configuration.php
 - $ chmod 755 -R Cache
-- ```
 
 ###Importing Database
 - Create Database for Website (Name it as you want, but dont forget to change config)
